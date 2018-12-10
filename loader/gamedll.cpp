@@ -441,8 +441,8 @@ public:
 			(((VEmptyClass *)gamedll_iface)->*u.mfpnew)();
 		}
 
-		mm_UnloadLibrary(gamedll_lib);
-		gamedll_lib = NULL;
+		//mm_UnloadLibrary(gamedll_lib);
+		//gamedll_lib = NULL;
 	}
 };
 

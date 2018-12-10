@@ -188,7 +188,7 @@ void BaseProvider::Notify_DLLInit_Pre(CreateInterfaceFn engineFactory,
 	// Since we have to be added as a Game path (cannot add GameBin directly), we
 	// automatically get added to other paths as well, including having the MM:S
 	// dir become the default write path for logs and more. We can fix some of these.
-
+	/*
 	char searchPath[260];
 	baseFs->GetSearchPath("GAME", (GetSearchPathTypes_t)0, searchPath, sizeof(searchPath));
 	for (size_t i = 0; i < sizeof(searchPath); ++i)
@@ -217,6 +217,7 @@ void BaseProvider::Notify_DLLInit_Pre(CreateInterfaceFn engineFactory,
 		}
 	}
 	baseFs->AddSearchPath(searchPath, "DEFAULT_WRITE_PATH");
+	*/
 #endif
 
 #if SOURCE_ENGINE >= SE_ORANGEBOX
